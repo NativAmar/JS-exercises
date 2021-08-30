@@ -16,3 +16,10 @@ function gradeRange(arr){
     return range;
 }
 console.log(gradeRange(grades));
+function medianGrade(array){
+    array.sort();
+    let size =Math.floor(array.length);
+    let newArr=array.slice(size/2);
+    return newArr[0];
+}
+console.log(medianGrade(grades));
