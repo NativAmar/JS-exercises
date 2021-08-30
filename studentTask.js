@@ -15,7 +15,6 @@ function gradeRange(arr){
     }
     return range;
 }
-console.log(gradeRange(grades));
 function medianGrade(){
     let NewArr=grades.slice();
     NewArr=NewArr.sort();
@@ -23,10 +22,8 @@ function medianGrade(){
     let newArr=NewArr.slice(size);
     return newArr[0];
 }
-console.log(medianGrade(grades));
 function secondHalfRange(lastArr){
     let len=lastArr.slice(Math.floor(lastArr.length/2));
     return  gradeRange(len); 
 }
-console.log(secondHalfRange(grades));
-
+console.log("Stats:\n\tRange: "+gradeRange(grades)+"\n\tMedian: "+medianGrade(grades)+"\n\tHalf Range: "+secondHalfRange(grades)); 
