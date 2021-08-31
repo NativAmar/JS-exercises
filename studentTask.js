@@ -27,3 +27,4 @@ function secondHalfRange(lastArr){
     return  gradeRange(len); 
 }
 console.log("Stats:\n\tRange: "+gradeRange(grades)+"\n\tMedian: "+medianGrade(grades)+"\n\tHalf Range: "+secondHalfRange(grades)); 
+console.log("hello")
