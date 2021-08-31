@@ -22,15 +22,19 @@ const formula1Champions = [
     "Hamilton",
     "Hamilton"
 ]
-let winners = {}
+var winners = {}
 
-function countWin(driver) {
-   let counter=0;
-   for(i=0;i<formula1Champions.length;i++){
-       if(formula1Champions[i]===driver){
-           counter++;
-       }
-   }
-   return winners[driver] = driver + ":" + counter;
+function countWin(driver) 
+{
+     if (winners.hasOwnProperty(driver)) 
+     {
+        winners[driver] +=1;
+     }
+     else
+     {
+         winners[driver] = 1;
+     }
 }
-formula1Champions.forEach(countWin);
+
+formula1Champions.forEach(countWin)
+console.log(winners);
